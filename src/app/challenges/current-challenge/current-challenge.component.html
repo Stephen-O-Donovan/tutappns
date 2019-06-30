@@ -1,4 +1,5 @@
 <StackLayout>
-    <TextField hint="enter text" [(ng-model)]="challengeDescription"></TextField>
-    <Label text="walk"></Label>
+    <TextField hint="enter text" [(ngModel)]="challengeDescription"></TextField>
+    <Button (tap)="onSetChallenge()" text="" ></Button>
+    <Label [text]="currentChallenge"></Label>
 </StackLayout>

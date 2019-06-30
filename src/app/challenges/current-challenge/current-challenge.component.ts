@@ -8,5 +8,11 @@ import { Component } from "@angular/core";
 })
 export class CurrentChallengeComponent {
     challengeDescription = '';
+    currentChallenge = '';
+    onSetChallenge(){
+
+        this.currentChallenge = this.challengeDescription;
+
+    }
 
 }
